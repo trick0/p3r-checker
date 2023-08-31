@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/p3r-checker/'
+    publicPath: process.env.NODE_ENV === "production" ? "/p3r-checker/" : "/",
 }
