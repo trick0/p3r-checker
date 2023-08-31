@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<div id="nav">
-			<router-link to="/">P3Reload Checker</router-link>
+			<router-link to="/">P3Reload Checker (at least I tried)</router-link>
 		</div>
 		<router-view />
 	</div>
