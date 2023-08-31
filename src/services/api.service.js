@@ -49,7 +49,7 @@ export const providers = {
 			const url = 'https://persona.atlus.com/p3r/index.html?lang=it';
 			return axios.get(url).then(res => {
 				const $ = cheerio.load(res.data);
-				const isAvailable = $(".retailSelectInput select").find('option').length <= 1;
+				const isAvailable = $(".retailSelectInput select").find('option').length > 1;
 				callback(isAvailable);
 				setTimeout(() => {
 					providers.p3.action(callback);
